@@ -42,8 +42,9 @@ public class sumar {
 
     private static boolean comprueba(int [][] respuesta){
         boolean estanTodos []= new boolean[MAX*MAX];
-        for(int[]fila:respuesta)
-            for(int valor : fila){
+        for(int i =0;i<respuesta.length;i++)
+            for(int j =0;j<respuesta[i].length;j++){
+                int valor=respuesta[i][j];
                 if(valor==0)return false;
                 estanTodos[valor -1]=true;
             }

@@ -10,6 +10,8 @@ public class vuelta {
     public static void main(String[] args) {
     rellena();
     pinta();
+    System.out.println("--------------");
+    pintaRev();
     }
     private static void rellena(){
         for (int i=0;i<mat.length;i++){
@@ -19,13 +21,26 @@ public class vuelta {
         }
     }
     private static void pinta(){
+        for (int i=0;i<mat2.length;i++){
+            for(int j=0;j<mat2[i].length;j++){
+                if(mat2[i][j]==0){
+                    System.out.print("|"+" ");
+                }
+                else{
+                System.out.print("|"+mat[i][j]);
+                }
+            }
+            System.out.println("|");
+        }
+    }
+    private static void pintaRev(){
         for (int i=0;i<mat2[0].length;i++){
             for(int j=0;j<mat2.length;j++){
                 if(mat2[j][i]==0){
                     System.out.print("|"+" ");
                 }
                 else
-                System.out.print("|"+mat2[j][i]);
+                    System.out.print("|"+mat2[j][i]);
             }
             System.out.println("|");
         }

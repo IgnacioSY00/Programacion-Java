@@ -3,20 +3,20 @@ package New;
 public class EJ_8 {
     static final int MIN =4;
     static final int MAX =5;
-   static int Tablero [][]=new int[MIN][MIN];
     static int Resultado [][]=new int[MAX][MAX];
     public static void main(String[] args) {
         rellena(MIN);
         imprime();
         sumafil();
         sumacol();
+        System.out.println("----------------");
         imprime();
 
     }
     private static void imprime(){
         for (int i = 0;i<MAX;i++){
             for(int j=0;j<MAX;j++){
-                System.out.print("|"+Resultado[i][j]);
+                System.out.printf("|"+"%2d",Resultado[i][j]);
             }
         System.out.println("|");
         }
