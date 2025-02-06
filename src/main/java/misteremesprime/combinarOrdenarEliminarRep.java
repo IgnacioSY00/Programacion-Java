@@ -1,4 +1,4 @@
-package puntosClave;
+/*package puntosClave;
 
 import java.util.Arrays;
 
@@ -35,10 +35,10 @@ public class combinarOrdenarEliminarRep {
     }
 
     public static int contarDuplicados(int[] array) {
-        int contador=0;
+        int contador = 0;
 
         for (int i = 0; i < array.length; i++) {
-            if (array[i]==-1) {
+            if (array[i] == -1) {
                 contador++;
             }
         }
@@ -47,6 +47,9 @@ public class combinarOrdenarEliminarRep {
 
     public static int[] reducirArray(int aF[]) {
 
+
     }
 
 }
+
+ */

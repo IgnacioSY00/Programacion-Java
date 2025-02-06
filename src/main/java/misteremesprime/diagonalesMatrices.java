@@ -1,21 +1,22 @@
-package puntosClave;
+package misteremesprime;
 
 public class diagonalesMatrices {
 
     public static void main(String[] args) {
         // Matriz cuadrada de 3x3
-        int[][] matriz = {
+        int[][] matriz ={
                 {1, 2, 3},
                 {4, 5, 6},
-                {7, 8, 9}
+                {7, 8, 9,7}
         };
 
         int n = matriz.length;
-
         // Validar que la matriz es cuadrada
-        if (n != matriz[0].length) {
-            System.out.println("La matriz no es cuadrada.");
-            return;
+        for(int i =0;i<matriz.length;i++){
+            if (n != matriz[i].length) {
+                System.out.println("La matriz no es cuadrada.");
+                return;
+            }
         }
 
         int sumaPrincipal = 0;

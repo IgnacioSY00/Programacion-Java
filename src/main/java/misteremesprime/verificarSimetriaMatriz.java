@@ -13,9 +13,11 @@ public class verificarSimetriaMatriz {
         int n = matriz.length;
 
         // Validar que la matriz es cuadrada
-        if (n != matriz[0].length) {
-            System.out.println("La matriz no es cuadrada.");
-            return;
+        for(int i=0;i<matriz.length;i++){
+            if (n != matriz[i].length) {
+                System.out.println("La matriz no es cuadrada.");
+                return;
+            }
         }
 
         boolean simetrica = true;
