@@ -1,4 +1,4 @@
-/*package puntosClave;
+/*package misteremesprime;
 
 public class eliminarLetras {
     public static void main(String[] args) {

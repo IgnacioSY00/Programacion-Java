@@ -1,4 +1,4 @@
-package puntosClave;
+package misteremesprime;
 
 public class rotacionMatriz90 {
     public static void main(String[] args) {
